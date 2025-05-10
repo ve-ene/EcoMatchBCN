@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/comenzar.css">
+    <link rel="stylesheet" href="css/resp.css">
+
+
+    <link rel="icon" href="img/favicon.svg" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>EcoMatchBCN</title>
+</head>
+
+<body>
+    <div class="back">
+        <img src="img/fondo-aprende.svg" alt="fondo" />
+    </div>
+    <div class="transition-overlay"></div>
+    <div class="content"></div>
+
+    <!--Iconos-->
+    <div class="group-1">
+        <img class="iconos-3" src="img/3-old.svg"></img>
+        <img class="iconos-2" src="img/2-old.svg"></img>
+        <img class="iconos-1" src="img/1-old.svg"></img>
+
+    </div>
+
+    <div class="group-2">
+        <img class="iconos-9" src="img/iconos-9.svg"></img>
+        <img class="iconos-8" src="img/iconos-8.svg"></img>
+        <img class="iconos-7" src="img/iconos-7.svg"></img>
+    </div>
+
+
+    <!--Menu-->
+    <div class="menu">
+        <div class="menu-hamb">
+            <input type="checkbox">
+            <img class="menu-close" src="img/Burger-menu.svg" alt="menu-hamb">
+            <img class="menu-open" src="img/close.svg" alt="icon-close">
+            <nav class="menu-content">
+                <ul class="navegador">
+                    <div class="inicio">
+                        <li><a href="index.html">
+                                <h3 class="containers">Inicio</h3>
+                            </a></li>
+                    </div>
+
+                    <div class="secciones">
+                        <li><a href="buscador.html">
+                                <h3 class="containers">Descubre dónde tirar</h3>
+                            </a></li>
+                        <li><a href="athome.html">
+                                <h3 class="encasa">Reciclar en casa</h3>
+                            </a></li>
+                        <li><a href="spots.html">
+                                <h3 class="puntos">Puntos verdes</h3>
+                            </a></li>
+                        <li><a href="recycle.html">
+                                <h3 class="reciclar">¿Por qué reciclar?</h3>
+                            </a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="new">
+            <img class="new-arrow" src="img/arrow.svg" alt="arrow">
+            <div class="new-content">
+                <h1 class="sections">Aprende jugando</h1>
+                <span>Explora los diferentes objetos y residuos que aparecen en pantalla.<br>Tu misión es arrastrarlos y
+                    soltarlos en el cubo adecuado según su tipo: papel, plástico, vidrio, orgánico o general.
+                    <strong>¡Pon a prueba tus conocimientos sobre reciclaje y aprende jugando!</strong>
+                </span>
+
+                <!--CTA-->
+                <div class="button-content">
+                    <a href="comenzar.html" class="button">
+                        <span>¡Comenzar!</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+                <!--no juego mobile-->
+
+                <div class="no-game">
+                    <div>
+                        <img src="img/GREEN-stoke.svg">
+                    </div>
+                    <h3>
+                        ¡Lo lamentamos mucho! 
+                    </h3>
+                    <span>
+                        El juego solo está disponible en versión escritorio.
+                    </span>
+                </div>
+                <button class="volver">Volver</button>
+    </div>
+
+
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="../../shared/gsap-trial/dist/gsap.js"></script>
+    <script src="../../shared/gsap-trial/dist/CustomEase.js"></script>
+    <script src="../../shared/gsap-trial/dist/SplitText.js"></script>
+    <script src="../../shared/gsap-trial/dist/ScrambleTextPlugin.js"></script>
+    <script src="../../shared/gsap-trial/dist/DrawSVGPlugin.js"></script>
+    <script src="../../shared/gsap-trial/dist/MorphSVGPlugin.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/comenzar.js"></script>
+</body>
+
+</html>

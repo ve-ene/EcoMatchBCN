@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/comenzar.css">
+    <link rel="stylesheet" href="css/resp.css">
+
+
+    <link rel="icon" href="img/favicon.svg" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>EcoMatchBCN</title>
+</head>
+
+<body>
+    <div class="transition-overlay"></div>
+    <div class="content"></div>
+
+    <!--Menu-->
+    <div class="menu">
+        <div class="menu-hamb">
+            <input type="checkbox">
+            <img class="menu-close" src="img/Burger-menu.svg" alt="menu-hamb">
+            <img class="menu-open" src="img/close.svg" alt="icon-close">
+            <nav class="menu-content">
+                <ul class="navegador">
+                    <div class="inicio">
+                        <li><a href="index.html">
+                                <h3 class="containers">Inicio</h3>
+                            </a></li>
+                    </div>
+
+                    <div class="secciones">
+                        <li><a href="buscador.html">
+                                <h3 class="containers">Descubre dónde tirar</h3>
+                            </a></li>
+                        <li><a href="athome.html">
+                                <h3 class="encasa">Reciclar en casa</h3>
+                            </a></li>
+                        <li><a href="spots.html">
+                                <h3 class="puntos">Puntos verdes</h3>
+                            </a></li>
+                        <li><a href="recycle.html">
+                                <h3 class="reciclar">¿Por qué reciclar?</h3>
+                            </a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="section-comenzar">
+        <div class="new">
+            <div class="new-content">
+                <h1 class="sections">Aprende jugando</h1>
+                <span>Explora los diferentes objetos y residuos que aparecen en pantalla.<br>Tu misión es arrastrarlos y
+                    soltarlos en el cubo adecuado según su tipo: orgánico, plástico, papel, vidrio o restos.
+                    <strong>¡Pon a prueba tus conocimientos sobre reciclaje y aprende jugando!</strong>
+                </span>
+            </div>
+        </div>
+        <!--juego-->
+        <div class="game-container">
+            <div class="score">Puntaje: <span id="score">0</span></div>
+            <div class="drop-zone">
+                <div id="items-container" class="items-container"></div>
+            </div>
+            <div class="bins-container">
+                <div class="bin" id="organic" data-bin="organic">
+                    <img class="cont-icon" src="img/BROWN.svg" width="80px">
+                    Orgánico
+                    <div id="discarded-organic" class="discarded-container"></div>
+                </div>
+
+                <div class="bin" id="plastic" data-bin="plastic">
+                    <img class="cont-icon" src="img/YELLOW.svg" width="50px">
+                    Plástico
+                    <div id="discarded-plastic" class="discarded-container"></div>
+                </div>
+                <div class="bin" id="paper" data-bin="paper">
+                    <img class="cont-icon" src="img/BLUE.svg" width="80px">
+                    Papel
+                    <div id="discarded-paper" class="discarded-container"></div>
+                </div>
+                <div class="bin" id="glass" data-bin="glass">
+                    <img class="cont-icon" src="img/GREEN.svg" width="80px">
+                    Vidrio
+                    <div id="discarded-glass" class="discarded-container"></div>
+                </div>
+                <div class="bin" id="electronic" data-bin="electronic">
+                    <img class="cont-icon" src="img/GRAY.svg" width="60px">
+                    Restos
+                    <div id="discarded-electronic" class="discarded-container"></div>
+                </div>
+            </div>
+            <button id="resetButton">Volver a empezar</button>
+        </div>
+
+        <!--no juego mobile-->
+
+        <div class="no-game">
+            <div>
+                <img src="img/GREEN-stoke.svg">
+            </div>
+            <h3>
+                ¡Lo lamentamos mucho! 
+            </h3>
+            <span>
+                El juego solo está disponible en versión escritorio.
+            </span>
+        </div>
+        <button class="volver">Volver</button>
+    </div>
+
+
+
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="../../shared/gsap-trial/dist/gsap.js"></script>
+    <script src="../../shared/gsap-trial/dist/CustomEase.js"></script>
+    <script src="../../shared/gsap-trial/dist/SplitText.js"></script>
+    <script src="../../shared/gsap-trial/dist/ScrambleTextPlugin.js"></script>
+    <script src="../../shared/gsap-trial/dist/DrawSVGPlugin.js"></script>
+    <script src="../../shared/gsap-trial/dist/MorphSVGPlugin.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/comenzar.js"></script>
+</body>
+
+</html>
