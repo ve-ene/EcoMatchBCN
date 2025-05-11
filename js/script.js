@@ -115,45 +115,22 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //mapa
-  gsap.from(".punto-verde", {
-    opacity: 0,
-    scale: 0,
-    stagger: 0.2,
-    duration: 0.8,
-    ease: "back.out(1.7)"
-});
 
-// tooltip para puntos verdes
 
-const puntosVerde = document.querySelectorAll('.punto-verde');
-
-puntosVerde.forEach(function(punto) {
-  punto.addEventListener('click', function() {
-    const info = punto.dataset.info;  // Obtén el valor del data-info
-
-    showInfo(info);  // Pasa el valor al método showInfo
+// Buscador
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.search-input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      realizarBusqueda(); 
+    }
   });
+
+  function realizarBusqueda() {
+    const query = document.querySelector('.search-input').value;
+    if (query.trim()) {
+      window.location.href = `pinned.html?q=${encodeURIComponent(query)}`;
+    }
+  }
 });
 
-function showInfo(info) {
-  const tooltip = document.querySelector('#tooltip');  // Selecciona el tooltip
-  tooltip.textContent = info;  // Asigna el contenido del data-info al tooltip
-  tooltip.style.display = "block";  // Asegúrate de que el tooltip esté visible
-}
 
-// const tooltip = document.querySelector('#tooltip');
-
-// document.querySelectorAll(".punto-verde").forEach(punto => {
-//     punto.addEventListener("mouseenter", e => {
-//         tooltip.style.display = "block";
-//         tooltip.textContent = punto.dataset.info;
-//     });
-//     punto.addEventListener("mouseleave", () => {
-//         tooltip.style.display = "none";
-//     });
-//     punto.addEventListener("mousemove", e => {
-//         tooltip.style.left = e.pageX + 10 + "px";
-//         tooltip.style.top = e.pageY - 20 + "px";
-//     });
-// });

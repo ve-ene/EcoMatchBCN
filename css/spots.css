@@ -28,20 +28,18 @@
 }
 
 .mapa-puntos {
-
     display: flex;
     justify-content: center;
     overflow: scroll;
     animation: enter 2.5s ease;
 
-  }
-
+}
 
 .contenedor-relativo {
     position: relative;
     width: 80vw;
     max-height: 50vh;
-  }
+}
   
 .mapa{
     max-width: 100%;
@@ -122,13 +120,3 @@
 
 }
 
-  /* #tooltip {
-    position: fixed;
-    display: none;
-    background: #fff;
-    padding: 6px 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    font-size: 14px;
-    pointer-events: none; /* Para evitar que interfiera con los clics
-} */

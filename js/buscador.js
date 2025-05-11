@@ -56,7 +56,7 @@ document.querySelector('.search-input').addEventListener('keypress', function(ev
 function realizarBusqueda() {
     const query = document.querySelector('.search-input').value;
     if (query.trim()) {
-        // Redirige a busqueda.html con el término como parámetro en la URL
+
         window.location.href = `busqueda.html?q=${encodeURIComponent(query)}`;
     }
 }
