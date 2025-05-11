@@ -1,95 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMatchBCN</title>
 
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <title>EcoMatchBCN</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="img/favicon.svg" type="image/png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="background"></div>
-    <div class="transition-overlay"></div>
-    <div class="content">
-        <h1>Conviértete en<br>especialista del reciclado</h1>
+  <div class="background"></div>
+  <div class="transition-overlay"></div>
 
-        <div class="wrapper">
-            <div class="search">
-                <div class="section-1">
-                    <img class="icono" src="img/GRAY.svg" alt="gray">
-                    <img class="arrow" src="img/arrow.svg" alt="arrow">
-                    <a href="buscador.html">
-                        <h3 class="containers">Descubre dónde tirar</h3>
-                    </a>
-                </div>
-            </div>
+  <main class="content">
+    <h1>Conviértete en<br>especialista del reciclado</h1>
 
-            <div class="game">
-                <div class="section-2">
-                    <img class="icono" src="img/BLUE.svg" alt="blue">
-                    <img class="arrow" src="img/arrow.svg" alt="arrow">
-                    <a href="game.html">
-                        <h3 class="aprende">Aprende jugando</h3>
-                    </a>
-                </div>
-            </div>
-
-            <div class="athome">
-                <div class="section-3">
-                    <img class="icono" src="img/YELLOW.svg" alt="green">
-                    <img class="arrow" src="img/arrow.svg" alt="arrow">
-                    <a href="athome.html">
-                        <h3 class="encasa">Reciclar en casa</h3>
-                    </a>
-                </div>
-            </div>
-
-            <div class="spots">
-                <div class="section-4">
-                    <img class="icono" src="img/GREEN.svg" alt="yellow">
-                    <img class="arrow" src="img/arrow.svg" alt="arrow">
-                    <a href="spots.html">
-                        <h3 class="puntos">Puntos verdes</h3>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="recycle">
-                <div class="section-5">
-                    <img class="icono" src="img/BROWN.svg" alt="brown">
-                    <img class="arrow" src="img/arrow.svg" alt="arrow">
-                    <a href="recycle.html">
-                        <h3 class="reciclar">¿Por qué reciclar?</h3>
-                    </a>
-                </div>
-            </div>
+    <div class="wrapper">
+      <section class="search">
+        <div class="section-1">
+          <img class="icono" src="img/GRAY.svg" alt="Contenedor gris">
+          <img class="arrow" src="img/arrow.svg" alt="Flecha">
+          <a href="buscador.html">
+            <h3 class="containers">Descubre dónde tirar</h3>
+          </a>
         </div>
+      </section>
+
+      <section class="game">
+        <div class="section-2">
+          <img class="icono" src="img/BLUE.svg" alt="Contenedor azul">
+          <img class="arrow" src="img/arrow.svg" alt="Flecha">
+          <a href="game.html">
+            <h3 class="aprende">Aprende jugando</h3>
+          </a>
+        </div>
+      </section>
+
+      <section class="athome">
+        <div class="section-3">
+          <img class="icono" src="img/YELLOW.svg" alt="Contenedor amarillo">
+          <img class="arrow" src="img/arrow.svg" alt="Flecha">
+          <a href="athome.html">
+            <h3 class="encasa">Reciclar en casa</h3>
+          </a>
+        </div>
+      </section>
+
+      <section class="spots">
+        <div class="section-4">
+          <img class="icono" src="img/GREEN.svg" alt="Contenedor verde">
+          <img class="arrow" src="img/arrow.svg" alt="Flecha">
+          <a href="spots.html">
+            <h3 class="puntos">Puntos verdes</h3>
+          </a>
+        </div>
+      </section>
+
+      <section class="recycle">
+        <div class="section-5">
+          <img class="icono" src="img/BROWN.svg" alt="Contenedor marrón">
+          <img class="arrow" src="img/arrow.svg" alt="Flecha">
+          <a href="recycle.html">
+            <h3 class="reciclar">¿Por qué reciclar?</h3>
+          </a>
+        </div>
+      </section>
     </div>
+  </main>
 
+  <!-- GSAP Scripts -->
+  <script src="gsap-public/src/gsap-core.js"></script>
+  <script src="gsap-public/src/CustomEase.js"></script>
+  <script src="gsap-public/src/SplitText.js"></script>
+  <script src="gsap-public/src/ScrambleTextPlugin.js"></script>
+  <script src="gsap-public/src/DrawSVGPlugin.js"></script>
+  <script src="gsap-public/src/MorphSVGPlugin.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/buscador.js"></script>
 </body>
-
-<!-- gsap -->
-<script src="gsap-public/src/gsap-core.js"></script>
-<script src="gsap-public/src/CustomEase.js"></script>
-<script src="gsap-public/src/SplitText.js"></script>
-<script src="gsap-public/src/ScrambleTextPlugin.js"></script>
-<script src="gsap-public/src/DrawSVGPlugin.js"></script>
-<script src="gsap-public/src/MorphSVGPlugin.js"></script>
-
-
-<script src="js/main.js"></script>
-<script src="js/script.js"></script>
-<script src="js/buscador.js"></script>
 
 </html>

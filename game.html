@@ -2,129 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/game.css">
-    <link rel="stylesheet" href="css/comenzar.css">
-    <link rel="stylesheet" href="css/resp.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoMatchBCN</title>
 
+  <link rel="icon" href="img/favicon.svg" type="image/png" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/game.css" />
+  <link rel="stylesheet" href="css/comenzar.css" />
+  <link rel="stylesheet" href="css/resp.css" />
 
-    <link rel="icon" href="img/favicon.svg" type="image/png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <title>EcoMatchBCN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="back">
-        <img src="img/fondo-aprende.svg" alt="fondo" />
+  <div class="back">
+    <img src="img/fondo-aprende.svg" alt="fondo" />
+  </div>
+
+  <div class="transition-overlay"></div>
+  <div class="content"></div>
+
+  <!-- Iconos -->
+  <div class="group-1">
+    <img class="iconos-3" src="img/3-old.svg" alt="icono 3" />
+    <img class="iconos-2" src="img/2-old.svg" alt="icono 2" />
+    <img class="iconos-1" src="img/1-old.svg" alt="icono 1" />
+  </div>
+
+  <div class="group-2">
+    <img class="iconos-9" src="img/iconos-9.svg" alt="icono 9" />
+    <img class="iconos-8" src="img/iconos-8.svg" alt="icono 8" />
+    <img class="iconos-7" src="img/iconos-7.svg" alt="icono 7" />
+  </div>
+
+  <!-- Menú -->
+  <div class="menu">
+    <div class="menu-hamb">
+      <input type="checkbox" id="menu-toggle" />
+      <img class="menu-close" src="img/Burger-menu.svg" alt="Abrir menú" />
+      <img class="menu-open" src="img/close.svg" alt="Cerrar menú" />
+      <nav class="menu-content">
+        <ul class="navegador">
+          <li class="inicio">
+            <a href="index.html">
+              <h3 class="containers">Inicio</h3>
+            </a>
+          </li>
+          <div class="secciones">
+            <li>
+              <a href="buscador.html">
+                <h3 class="containers">Descubre dónde tirar</h3>
+              </a>
+            </li>
+            <li>
+              <a href="athome.html">
+                <h3 class="encasa">Reciclar en casa</h3>
+              </a>
+            </li>
+            <li>
+              <a href="spots.html">
+                <h3 class="puntos">Puntos verdes</h3>
+              </a>
+            </li>
+            <li>
+              <a href="recycle.html">
+                <h3 class="reciclar">¿Por qué reciclar?</h3>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
     </div>
-    <div class="transition-overlay"></div>
-    <div class="content"></div>
+  </div>
 
-    <!--Iconos-->
-    <div class="group-1">
-        <img class="iconos-3" src="img/3-old.svg"></img>
-        <img class="iconos-2" src="img/2-old.svg"></img>
-        <img class="iconos-1" src="img/1-old.svg"></img>
+  <!-- Sección de juego -->
+  <div class="section">
+    <div class="new">
+      <img class="new-arrow" src="img/arrow.svg" alt="arrow" />
+      <div class="new-content">
+        <h1 class="sections">Aprende jugando</h1>
+        <span>
+          Explora los diferentes objetos y residuos que aparecen en pantalla.<br />
+          Tu misión es arrastrarlos y soltarlos en el cubo adecuado según su tipo: papel, plástico, vidrio, orgánico o general.
+          <strong>¡Pon a prueba tus conocimientos sobre reciclaje y aprende jugando!</strong>
+        </span>
 
-    </div>
-
-    <div class="group-2">
-        <img class="iconos-9" src="img/iconos-9.svg"></img>
-        <img class="iconos-8" src="img/iconos-8.svg"></img>
-        <img class="iconos-7" src="img/iconos-7.svg"></img>
-    </div>
-
-
-    <!--Menu-->
-    <div class="menu">
-        <div class="menu-hamb">
-            <input type="checkbox">
-            <img class="menu-close" src="img/Burger-menu.svg" alt="menu-hamb">
-            <img class="menu-open" src="img/close.svg" alt="icon-close">
-            <nav class="menu-content">
-                <ul class="navegador">
-                    <div class="inicio">
-                        <li><a href="index.html">
-                                <h3 class="containers">Inicio</h3>
-                            </a></li>
-                    </div>
-
-                    <div class="secciones">
-                        <li><a href="buscador.html">
-                                <h3 class="containers">Descubre dónde tirar</h3>
-                            </a></li>
-                        <li><a href="athome.html">
-                                <h3 class="encasa">Reciclar en casa</h3>
-                            </a></li>
-                        <li><a href="spots.html">
-                                <h3 class="puntos">Puntos verdes</h3>
-                            </a></li>
-                        <li><a href="recycle.html">
-                                <h3 class="reciclar">¿Por qué reciclar?</h3>
-                            </a></li>
-                    </div>
-                </ul>
-            </nav>
+        <!-- CTA -->
+        <div class="button-content">
+          <a href="comenzar.html" class="button">
+            <span>¡Comenzar!</span>
+          </a>
         </div>
+      </div>
     </div>
 
-    <div class="section">
-        <div class="new">
-            <img class="new-arrow" src="img/arrow.svg" alt="arrow">
-            <div class="new-content">
-                <h1 class="sections">Aprende jugando</h1>
-                <span>Explora los diferentes objetos y residuos que aparecen en pantalla.<br>Tu misión es arrastrarlos y
-                    soltarlos en el cubo adecuado según su tipo: papel, plástico, vidrio, orgánico o general.
-                    <strong>¡Pon a prueba tus conocimientos sobre reciclaje y aprende jugando!</strong>
-                </span>
-
-                <!--CTA-->
-                <div class="button-content">
-                    <a href="comenzar.html" class="button">
-                        <span>¡Comenzar!</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-                <!--no juego mobile-->
-
-                <div class="no-game">
-                    <div>
-                        <img src="img/green-sad.svg">
-                    </div>
-                    <h3>
-                        ¡Lo lamentamos mucho! 
-                    </h3>
-                    <span>
-                        El juego solo está disponible en versión escritorio.
-                    </span>
-                </div>
-                <button class="volver">Volver</button>
+    <!-- Aviso para móviles -->
+    <div class="no-game">
+      <div>
+        <img src="img/green-sad.svg" alt="icono triste" />
+      </div>
+      <h3>¡Lo lamentamos mucho!</h3>
+      <span>El juego solo está disponible en versión escritorio.</span>
     </div>
+    <button class="volver">Volver</button>
+  </div>
 
+  <!-- GSAP -->
+  <script src="gsap-public/umd/gsap.js"></script>
+  <script src="gsap-public/src/CustomEase.js"></script>
+  <script src="gsap-public/src/SplitText.js"></script>
+  <script src="gsap-public/src/ScrambleTextPlugin.js"></script>
+  <script src="gsap-public/src/DrawSVGPlugin.js"></script>
+  <script src="gsap-public/src/MorphSVGPlugin.js"></script>
+  <script src="gsap-public/src/ScrollTrigger.js"></script>
 
-
-    <!-- gsap -->
-    <script src="gsap-public/umd/gsap.js"></script>
-    <script src="gsap-public/src/CustomEase.js"></script>
-    <script src="gsap-public/src/SplitText.js"></script>
-    <script src="gsap-public/src/ScrambleTextPlugin.js"></script>
-    <script src="gsap-public/src/DrawSVGPlugin.js"></script>
-    <script src="gsap-public/src/MorphSVGPlugin.js"></script>
-    
-    <script src="gsap-public/src/ScrollTrigger.js"></script>
-    
-
-    <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/buscador.js"></script>
-    <script src="js/comenzar.js"></script>
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/buscador.js"></script>
+  <script src="js/comenzar.js"></script>
 </body>
 
 </html>

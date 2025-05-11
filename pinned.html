@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/pinned.css">
-
-
-
-    <link rel="icon" href="img/favicon.svg" type="image/png">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +16,7 @@
 
 <body>
     <div class="back">
-        <img src="img/fondo-spots.svg" alt="fondo"/>
+        <img src="img/fondo-spots.svg" alt="fondo">
     </div>
     <div class="transition-overlay"></div>
     <div class="content"></div>
@@ -33,24 +30,33 @@
             <nav class="menu-content">
                 <ul class="navegador">
                     <div class="inicio">
-                        <li><a href="index.html">
+                        <li>
+                            <a href="index.html">
                                 <h3 class="containers">Inicio</h3>
-                            </a></li>
+                            </a>
+                        </li>
                     </div>
-
                     <div class="secciones">
-                        <li><a href="buscador.html">
+                        <li>
+                            <a href="buscador.html">
                                 <h3 class="containers">Descubre dónde tirar</h3>
-                            </a></li>
-                            <li><a href="game.html">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="game.html">
                                 <h3 class="aprende">Aprende jugando</h3>
-                            </a></li>
-                        <li><a href="athome.html">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="athome.html">
                                 <h3 class="encasa">Reciclar en casa</h3>
-                            </a></li>
-                        <li><a href="recycle.html">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="recycle.html">
                                 <h3 class="reciclar">¿Por qué reciclar?</h3>
-                            </a></li>
+                            </a>
+                        </li>
                     </div>
                 </ul>
             </nav>
@@ -59,57 +65,55 @@
 
     <div class="section">
         <div class="new">
-            <img class="new-arrow" src="img/arrow.svg" alt="arrow">
+            <img class="new-arrow" src="img/arrow.svg" alt="Flecha">
             <div class="new-content">
                 <h1 class="sections">Puntos verdes</h1>
-                <span>Los puntos verdes sirven para depositar los residuos que <strong>no podemos tirar en los sistemas de recogida habituales.</strong> Cuando llevamos los residuos a los puntos verdes contribuimos a mejorar su proceso de reciclaje y preservamos el medio ambiente. En la ciudad de Barcelona, contamos con <stong>más de 130 puntos verdes</stong>, que se clasifican entre puntos verdes de zona, puntos verdes de barrio y puntos verdes móviles.
-
+                <span>
+                    Los puntos verdes sirven para depositar los residuos que <strong>no podemos tirar en los sistemas de recogida habituales.</strong>
+                    Cuando llevamos los residuos a los puntos verdes contribuimos a mejorar su proceso de reciclaje y preservamos el medio ambiente.
+                    En la ciudad de Barcelona, contamos con <strong>más de 130 puntos verdes</strong>, que se clasifican entre puntos verdes de zona, puntos verdes de barrio y puntos verdes móviles.
+                    <br><br>
                     Encuentra tu punto verde más cercano.
                 </span>
             </div>
         </div>
     </div>
 
-        <!-- Mapa -->
-        
-        <div class="mapa-puntos">
-            <div class="contenedor-relativo">
-              <div class="puntos-verde">                
+    <!-- Mapa -->
+    <div class="mapa-puntos">
+        <div class="contenedor-relativo">
+            <div class="puntos-verde">
                 <h3>Encuentra el punto más cercano</h3>
                 <div class="search-container">
-                  <img class="icon-search" src="img/LUPA.svg">
-                  <input type="text" placeholder="Introduce tu código postal" class="search-input">
-                </div>     
-              </div>
-              <div class="spots-container">
+                    <img class="icon-search" src="img/LUPA.svg" alt="Buscar">
+                    <input type="text" placeholder="Introduce tu código postal" class="search-input">
+                </div>
+            </div>
+            <div class="spots-container">
                 <div class="spot">
-                    <img src="img/GREEN.svg" width="20px">
+                    <img src="img/GREEN.svg" width="20" alt="Contenedor verde">
                     <h3>Punto verde de Bacardí</h3>
                     <span>Carrer del Vallespir, 14, Sants-Montjuïc, 08014 Barcelona</span>
                 </div>
                 <div class="spot">
-                    <img src="img/GREEN.svg" width="20px">
+                    <img src="img/GREEN.svg" width="20" alt="Contenedor verde">
                     <h3>Punto verde móvil</h3>
                     <span>Carrer de Joan Güell, 53, Sants-Montjuïc, 08028 Barcelona</span>
                 </div>
                 <div class="spot">
-                    <img src="img/GREEN.svg" width="20px">
+                    <img src="img/GREEN.svg" width="20" alt="Contenedor verde">
                     <h3>Punto verde Sants/Les corts</h3>
                     <span>Carrer de Nicaragua, 101, Les Corts, 08029 Barcelona</span>
                 </div>
             </div>
-              <div class="mapa">
+            <div class="mapa">
                 <img src="img/OpenStreetMap_Barcelona.svg" alt="Mapa de Barcelona">
-              </div>
-
             </div>
-          </div>
-
-          
+        </div>
+    </div>
 
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    
     <script src="gsap-public/umd/gsap.js"></script>
     <script src="gsap-public/umd/CustomEase.js"></script>
     <script src="gsap-public/umd/SplitText.js"></script>
@@ -117,11 +121,8 @@
     <script src="gsap-public/umd/DrawSVGPlugin.js"></script>
     <script src="gsap-public/umd/MorphSVGPlugin.js"></script>
     <script src="gsap-public/umd/ScrollTrigger.js"></script>
-    
-
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>

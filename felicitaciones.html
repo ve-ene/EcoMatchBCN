@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/athome.css">
     <link rel="stylesheet" href="css/comenzar.css">
-
-
-    <link rel="icon" href="img/favicon.svg" type="image/png">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,33 +20,42 @@
     <div class="transition-overlay"></div>
     <div class="content"></div>
 
-    <!--Menu-->
+    <!-- Menu -->
     <div class="menu">
         <div class="menu-hamb">
-            <input type="checkbox">
-            <img class="menu-close" src="img/Burger-menu.svg" alt="menu-hamb">
-            <img class="menu-open" src="img/close.svg" alt="icon-close">
+            <input type="checkbox" id="menu-toggle">
+            <img class="menu-close" src="img/Burger-menu.svg" alt="Abrir menú">
+            <img class="menu-open" src="img/close.svg" alt="Cerrar menú">
             <nav class="menu-content">
                 <ul class="navegador">
                     <div class="inicio">
-                        <li><a href="index.html">
+                        <li>
+                            <a href="index.html">
                                 <h3 class="containers">Inicio</h3>
-                            </a></li>
+                            </a>
+                        </li>
                     </div>
-
                     <div class="secciones">
-                        <li><a href="buscador.html">
+                        <li>
+                            <a href="buscador.html">
                                 <h3 class="containers">Descubre dónde tirar</h3>
-                            </a></li>
-                        <li><a href="athome.html">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="athome.html">
                                 <h3 class="encasa">Reciclar en casa</h3>
-                            </a></li>
-                        <li><a href="spots.html">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="spots.html">
                                 <h3 class="puntos">Puntos verdes</h3>
-                            </a></li>
-                        <li><a href="recycle.html">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="recycle.html">
                                 <h3 class="reciclar">¿Por qué reciclar?</h3>
-                            </a></li>
+                            </a>
+                        </li>
                     </div>
                 </ul>
             </nav>
@@ -59,47 +66,40 @@
         <div class="new">
             <div class="new-content">
                 <div class="block-icons">
-                    <img class="green" src="img/green-ok.svg" width="60px">
-                    <img class="gray" src="img/gray-ok.svg" width="50px">
-                    <img class="brown" src="img/brown-ok.svg" width="60px">
-                    <img class="yellow" src="img/yellow-ok.svg" width="45px">
-                    <img class="blue" src="img/blue-ok.svg" width="60px">
-    
+                    <img class="green" src="img/green-ok.svg" width="60" alt="Icono reciclaje verde">
+                    <img class="gray" src="img/gray-ok.svg" width="50" alt="Icono reciclaje gris">
+                    <img class="brown" src="img/brown-ok.svg" width="60" alt="Icono reciclaje marrón">
+                    <img class="yellow" src="img/yellow-ok.svg" width="45" alt="Icono reciclaje amarillo">
+                    <img class="blue" src="img/blue-ok.svg" width="60" alt="Icono reciclaje azul">
                 </div>
 
-
                 <h1 class="sections">¡Lo has hecho genial!</h1>
-                <span><strong>¡Has sacado el mejor puntaje!</strong><br>Sigue así para llegar a ser especialista en
-                    reciclado, y comparte esta web para ayudar a cuidar el planeta.
+                <span>
+                    <strong>¡Has sacado el mejor puntaje!</strong><br>
+                    Sigue así para llegar a ser especialista en reciclado, y comparte esta web para ayudar a cuidar el planeta.
                 </span>
-                <!--CTA-->
+                <!-- CTA -->
                 <div class="button-content">
                     <a href="comenzar.html" class="button">
-                        <button class="volver">Volver a empezar</button>
+                        <button class="volver" type="button">Volver a empezar</button>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-    <!-- gsap -->
-<!-- GSAP y plugins desde tu carpeta local del paquete trial -->
-<script src="gsap-public/umd/gsap.js"></script>
-<script src="gsap-public/umd/CustomEase.js"></script>
-<script src="gsap-public/umd/SplitText.js"></script>
-<script src="gsap-public/umd/ScrambleTextPlugin.js"></script>
-<script src="gsap-public/umd/DrawSVGPlugin.js"></script>
-<script src="gsap-public/umd/MorphSVGPlugin.js"></script>
-
-<script src="gsap-public/umd/ScrollTrigger.js"></script>
-
+    <!-- GSAP y scripts -->
+    <script src="gsap-public/umd/gsap.js"></script>
+    <script src="gsap-public/umd/CustomEase.js"></script>
+    <script src="gsap-public/umd/SplitText.js"></script>
+    <script src="gsap-public/umd/ScrambleTextPlugin.js"></script>
+    <script src="gsap-public/umd/DrawSVGPlugin.js"></script>
+    <script src="gsap-public/umd/MorphSVGPlugin.js"></script>
+    <script src="gsap-public/umd/ScrollTrigger.js"></script>
 
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
     <script src="js/comenzar.js"></script>
-
 </body>
 
 </html>
