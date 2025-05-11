@@ -250,6 +250,7 @@ span {
     height: 100vh;
     overflow: hidden;
     z-index: -1;
+    transform: translate(0, -10%) scale(1.5);
 
 }
 
