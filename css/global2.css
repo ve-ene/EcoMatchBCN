@@ -163,6 +163,10 @@ h1.sections {
 h3.subtitle {
     font-weight: 700;
     font-size: clamp(20px, 3vw, 40px);
+
+
+    animation: enter 2.5s ease;
+
 }
 
 .new-arrow {
@@ -190,6 +194,8 @@ h3 {
     font-weight: 700;
     text-decoration: none;
     white-space: nowrap;
+
+    
 
 }
 

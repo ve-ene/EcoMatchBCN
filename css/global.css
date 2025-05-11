@@ -210,13 +210,13 @@ h3.aprende {
 
 h3.encasa {
     &:hover {
-        text-shadow: 0 0 10px var(--green);
+        text-shadow: 0 0 10px var(--yellow);
     }
 }
 
 h3.puntos {
     &:hover {
-        text-shadow: 0 0 10px var(--yellow);
+        text-shadow: 0 0 10px var(--green);
     }
 }
 

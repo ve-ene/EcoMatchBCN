@@ -12,11 +12,11 @@
 
 @keyframes enterAnimation {
     0% {
-        transform: translate(15%, 20%)scale(1.5);
+        transform: translate(15%, 20%)scale(2);
     }
 
     100% {
-        transform: translate(3%, -15%)scale(1.5);
+        transform: translate(3%, -15%)scale(2);
     }
 }
 
@@ -25,4 +25,57 @@
     height: 100%;
     object-fit: cover;
     transition: transform 1.5s ease;
+}
+
+.iconos-scroll{
+    position: absolute;
+    right:1em;
+}
+
+.iconos-9,
+.iconos-8,
+.iconos-7 {
+    backdrop-filter: blur(3px);
+
+}
+
+
+.group-2 {
+
+    width: clamp(200px, 40vw, 500px);
+    height: clamp(200px, 40vw, 500px);
+
+}
+
+.new-content {
+padding-bottom: 10em;
+gap:20px;
+
+img{
+    animation: enter 2.5s ease;
+}
+
+}
+
+.block-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-gray);
+    width: auto;
+    height: 50cqw;
+    padding: 5em;
+    z-index: 1;
+}
+
+.iconos-final {
+    position: absolute;
+    display: flex;
+    gap: 0.5em;
+}
+
+@media (min-width:1024px){
+    .block-1{
+        height: 10cqw;
+    }
 }
