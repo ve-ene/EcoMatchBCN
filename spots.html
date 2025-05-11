@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global2.css">
     <link rel="stylesheet" href="css/spots.css">
+    <link rel="stylesheet" href="css/buscador.css">
 
 
     <link rel="icon" href="img/favicon.svg" type="image/png">
@@ -70,19 +71,61 @@
         </div>
     </div>
 
+        <!-- Mapa SVG simulado -->
+        
+        <div class="mapa-puntos">
+            <div class="contenedor-relativo">
+              <div class="puntos-verde">                
+                <h3>Encuentra el punto más cercano</h3>
+                <div class="search-container">
+                  <img class="icon-search" src="img/LUPA.svg">
+                  <input type="text" placeholder="Introduce tu código postal" class="search-input">
+                </div>     
+              </div>
+          
+              <div class="mapa">
+                <img src="img/OpenStreetMap_Barcelona.svg" alt="Mapa de Barcelona">
+              </div>
+            </div>
+          </div>
+          
 
+
+
+            <!-- <svg class="mapa" viewBox="0 10 800 700" preserveAspectRatio="xMidYMid meet">
+              <image href="img/OpenStreetMap_Barcelona.svg" width="800" height="700" />
+          
+              
+              <circle class="punto-verde" cx="100" cy="150" r="6" fill="#00aa55" data-info="Punto Verde Gràcia">
+                <title>Punto Verde Gràcia</title>
+              </circle>
+              <circle class="punto-verde" cx="180" cy="200" r="6" fill="#00aa55" data-info="Punto Verde Sants">
+                <title>Punto Verde Sants</title>
+              </circle>
+              <circle class="punto-verde" cx="250" cy="300" r="6" fill="#00aa55" data-info="Punto Verde Poblenou">
+                <title>Punto Verde Poblenou</title>
+              </circle>
+
+            </svg>
+            <div id="tooltip" style="position: absolute; display: none; background: #fff; padding: 6px 10px; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.2); font-size: 14px;"></div> -->
+          </div>
+          
 
     <!-- gsap -->
-    <script src="gsap-public/src/gsap-core.js"></script>
-    <script src="gsap-public/src/CustomEase.js"></script>
-    <script src="gsap-public/src/SplitText.js"></script>
-    <script src="gsap-public/src/ScrambleTextPlugin.js"></script>
-    <script src="gsap-public/src/DrawSVGPlugin.js"></script>
-    <script src="gsap-public/src/MorphSVGPlugin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     
+    <script src="gsap-public/umd/gsap.js"></script>
+    <script src="gsap-public/umd/CustomEase.js"></script>
+    <script src="gsap-public/umd/SplitText.js"></script>
+    <script src="gsap-public/umd/ScrambleTextPlugin.js"></script>
+    <script src="gsap-public/umd/DrawSVGPlugin.js"></script>
+    <script src="gsap-public/umd/MorphSVGPlugin.js"></script>
+    <script src="gsap-public/umd/ScrollTrigger.js"></script>
+    
+
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/buscador.js"></script>
+
 </body>
 
 </html>

@@ -27,5 +27,70 @@
     transition: transform 1.5s ease;
 }
 
+.mapa-puntos {
+
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    animation: enter 2.5s ease;
+
+  }
 
 
+.contenedor-relativo {
+    position: relative;
+    width: 80vw;
+    max-height: 50vh;
+  }
+  
+.mapa{
+    max-width: 100%;
+    max-height: 50vh;
+    overflow-y: scroll;
+    border-radius: 20px;
+
+    animation: enter 2.5s ease;
+  }
+  
+.mapa img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+.puntos-verde{
+    position: absolute;
+    top:2em;
+    left: 2em;
+    z-index: 2;
+    background: #ffffffbb;
+    padding: 1em;
+    border-radius: 10px;
+    width: fit-content;
+    animation: enter 2.5s ease;
+
+    h3 {
+      text-align: center;
+      font-size: clamp(12px, 14px, 20px);
+      padding-bottom: 15px;
+    }
+  
+    .search-input {
+      width: 200px;
+      text-align: left;
+      font-size: clamp(10px, 12px, 18px);
+    }
+}
+
+
+
+  /* #tooltip {
+    position: fixed;
+    display: none;
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    font-size: 14px;
+    pointer-events: none; /* Para evitar que interfiera con los clics
+} */
