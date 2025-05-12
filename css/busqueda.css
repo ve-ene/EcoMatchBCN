@@ -387,7 +387,7 @@ justify-content: center;
             .secciones {
                 display: flex;
                 justify-content: space-around;
-                margin-left: 20em;
+                margin-left: 17em;
                 flex-wrap: nowrap;
 
             }
